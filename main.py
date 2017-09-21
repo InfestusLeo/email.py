@@ -37,13 +37,14 @@ def send_email():
     global RECEPIENT,MESSAGE
     RECEPIENT = input("Enter the email address of the recipient: ")
     MESSAGE = input("Enter your message: ")
+    print("Please wait, establishing a connection.")
     soc = s.SMTP(HOST,PORT)
     print(soc.ehlo())
     print(soc.starttls())
     print(soc.login(SENDER_EMAIL,SENDER_PASSWORD))
     soc.sendmail(SENDER_EMAIL,RECEPIENT,MESSAGE)
-    print("Your message has been sent to {}".format(RECEPIENT))
     print(soc.quit())
+    print("Your message has been sent to {}".format(RECEPIENT))
     write_log(RECEPIENT,MESSAGE)
 
 def write_log(*args):
