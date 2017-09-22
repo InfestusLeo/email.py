@@ -10,4 +10,6 @@ DONE - it's that simple!
 # Features
 v1.0 Send emails over SMTP
 
-``The program is buit on Pyhton 3.5
+
+
+The program is buit on Pyhton 3.5
