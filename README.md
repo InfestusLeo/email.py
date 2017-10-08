@@ -1,15 +1,18 @@
 # email.py - Send emails with Python
-This is a program built on python to send an email using SMTP
+This is a program built on python to send emails.
 <br><br>
-<h4>How to use it?</h4>
-Run main.py as >> python main.py<br>
-Then enter the required information along with your credentials<br>
-Enter a message body<br>
-DONE - it's that simple!<br>
-<br><br>
-<h4>Features</h4>
-v1.0 Send emails over SMTP
-
-
-
+<hr>
+<h4>Features</h4><br>
+<b>ver1.1</b>
+You can now store multiple accounts<br>
+Data structure migrated from normal text files to pickles to provide confidentiality and a slight performance boost.<br>
+Storing data in the form of data frames - using pandas<br>
+Passwords are now hashed and stored in pickles to provide some additional layers of security
+<hr><br><br>
+<b>ver1.0</b><br>
+Send emails over SMTP
+<hr><br><br>
+<h4>Upcoming features</h4><br>
+Contact list - Tired of giving the email-id of your receiver everytime you use the program? Contact list is on it's way.
+<hr><br><br>
 The program is buit on Pyhton 3.5
